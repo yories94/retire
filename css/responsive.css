@@ -1,5 +1,5 @@
 /* Medium Layout: 1280px. */
-
+/* 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 
     .mainmenu-area #mainmenu ul.nav.navbar-nav {
@@ -8,7 +8,7 @@
     .mainmenu-area #mainmenu ul.nav.navbar-nav li a {
         padding: 15px 10px;
     }
-}
+} */
 
 
 /* Tablet Layout: 768px. */
@@ -48,48 +48,29 @@
 /* Mobile Layout: 320px. */
 
 @media only screen and (max-width: 767px) {
-    body {
+    /* body {
         font-size: 12px;
-    }
+    } */
     .page-title {
         margin-bottom: 30px;
     }
     .page-title h2.title {
         font-size: 30px;
     }
-    .mainmenu-area #mainmenu {
-        overflow: auto;
-    }
-    .mainmenu-area #mainmenu ul.nav.navbar-nav li {
-        display: block;
-    }
-    .mainmenu-area #mainmenu ul.nav.navbar-nav.help-menu li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-    .mainmenu-area #mainmenu ul.nav.navbar-nav li a {
-        padding: 15px 10px;
-    }
     .filter-controls li {
         display: block;
         padding: 5px;
         margin-bottom: 0;
     }
-    .mainmenu-area #mainmenu {
-        padding: 0 30px;
-        background: #87b5ff;
-        background: -webkit-gradient(linear, left top, right top, from(#87b5ff), to(#99d4ef));
-        background: linear-gradient(to right, #87b5ff 0%, #99d4ef 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87b5ff', endColorstr='#99d4ef', GradientType=1);
-        text-align: center;
+    .navbar-brand img {
+        width: 150px;
     }
-    .mainmenu-area .navbar-toggle {
-        border: 1px solid #ffffff;
-        border-radius: 3px;
-    }
-
-    .mainmenu-area .navbar-toggle .icon-bar {
-        background-color: #ffffff;
+    .navbar-nav a {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     }
 
     .bttn.bttn-lg {
