@@ -37,12 +37,18 @@ get_header();
                 <div class="row blog-container">
                     <div class="col-md-8">
                         
-                    <?php
-                    
+                <?php
+
+                // $args = array( 'posts_per_page' => 10 );
+                $args = array( );
+                $the_query = new WP_Query( $args );
+                     
+                if ( $the_query->have_posts() ) :
+
                     // Display all post here
-                    while ( have_posts() ) :
-                        the_post();
-                    ?>
+                    while ( $the_query->have_posts() ) :
+                        $the_query->the_post();
+                ?>
 
                         <div class="news">
                             <h2><?php the_title( ); ?></h2>
@@ -74,10 +80,13 @@ get_header();
 
                         </div>
 
-                    <?php
+                <?php
                     endwhile;
                     wp_pagenavi();
-                    ?>
+                endif;
+
+                wp_reset_postdata( );
+                ?>
 
                     </div>
 

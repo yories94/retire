@@ -8,10 +8,13 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+/* 
+ * Theme Setup
+ */
+
 // Check if the function 'happylife_theme' is available.
 if ( ! function_exists( 'happylife_theme_setup' ) ) {
 	
-	// Define the function
 	function happylife_theme_setup() {
 
 		// Register all navigation menus for theme.
@@ -29,6 +32,46 @@ if ( ! function_exists( 'happylife_theme_setup' ) ) {
 }
 // Hook the function 'happy_life' for theme
 add_action( 'after_setup_theme', 'happylife_theme_setup' );
+
+// Check if the function 'register_widgets' is available
+if ( ! function_exists( 'register_widgets' ) ) {
+
+	function register_widgets() {
+		register_sidebar( array(
+			'name' => __( 'Main Sidebar', 'wpb' ),
+			'id'   => 'blog_sidebar',
+			'description' => __( 'Sidebar untuk halaman blog', 'wbp' ),
+			'before_widget' => '<div class="widgt-padding widgt">',
+			'after_widget' => '</div>',
+			'before_title' => '',
+			'after_title' => ''
+		) );
+	}
+}
+add_action( 'widgets_init', 'register_widgets' );
+
+/* 
+ * Blog and Article Settings
+ */
+
+// Changing excerpt length
+function new_excerpt_length( $length ) {
+	return 100;
+}
+add_filter( 'excerpt_length', 'new_excerpt_length' );
+
+// Changing excerpt more
+function new_excerpt_more( $more ) {
+	
+	return '&hellip; <a href="' . get_the_permalink() . '" 
+			class="btn btn-primary btn-lg btn-center">Read More</a>';
+
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+/* 
+ * Adding all stylesheets and scripts for theme
+ */
 
 // Add stylesheet function
 function add_stylesheets() {

@@ -44,10 +44,10 @@ get_header();
                         the_post();
                     ?>
 
-                        <div class="news">
+                        <div class="news-read">
                             <h2><?php the_title( ); ?></h2>
                             <div class="news-meta">
-                                <span>By <?php the_author( ); ?>, </span>
+                                <span><?php the_author( ); ?></span>
                                 <span><?php the_date( ); ?></span>
                             </div>
 
@@ -69,14 +69,13 @@ get_header();
                         ?>
 
                             <?php
-                            the_excerpt();
+                            the_content();
                             ?>
 
                         </div>
 
                     <?php
                     endwhile;
-                    wp_pagenavi();
                     ?>
 
                     </div>
