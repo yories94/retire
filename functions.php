@@ -103,6 +103,7 @@ function add_scripts() {
 		'modernizr' => $base . '/js/vendor/modernizr-2.8.3.min.js',
 		'jquery' => $base . '/js/vendor/jquery-1.12.4.min.js',
 		'bootstrap.min' => $base . '/js/vendor/bootstrap.min.js',
+		
 		'main' => $base . '/js/main.js'
 	);
 

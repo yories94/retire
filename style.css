@@ -15,7 +15,8 @@ CSS INDEX
 5. Mainmenu-Area
 6. Jumbotron-Blog-Area
 7. Blog-Area
-17. Footer-Area
+8. 404-Page
+9. Footer-Area
 -----------------------------------------------------------------------------------*/
 
 /*-----------------
@@ -245,6 +246,7 @@ input:-webkit-autofill:focus {
 
 .jumbotron {
     padding-top: 8rem;
+    margin-bottom: 0;
     padding-bottom: 4rem;
     border-radius: 0;
 }
@@ -257,7 +259,7 @@ input:-webkit-autofill:focus {
 }
 
 .bg-happy {
-    background-image: url("images/header-bg6.jpg");
+    background-image: url("images/header-bg-transp.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -283,14 +285,38 @@ input:-webkit-autofill:focus {
 
 /*-- 7. Blog Area --*/
 
+.grey-container {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+}
+
+.grey-container span { color: #666666;}
+
 .blog-container {
     padding-top: 50px;
+}
+
+.archive-desc {
+    padding: 20px 10px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    border-bottom: 1px solid #d0d0d0;
+    color: #6f6f6f;
+}
+
+.bold-archive-desc {
+    font-weight: bolder;
+    color: #1f1f1f;
 }
 
 .news {
     margin-bottom: 80px;
     padding-bottom: 80px;
     border-bottom: 1px solid #d6d6d6;
+}
+
+.news-thumbnail {
+    border: 1px solid #eeeeee;
 }
 
 .news-read {
@@ -304,6 +330,14 @@ input:-webkit-autofill:focus {
 .news p, .news-read p {
     font-size: 16px;
     line-height: 2;
+}
+
+.cat-item {
+    display: inline-block; 
+    margin-bottom: 9px;
+    padding: 6px 13px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
 }
 
 .pagination {
@@ -360,7 +394,14 @@ input:-webkit-autofill:focus {
     font-size: 18px;
 }
 
-/*-- 17. Footer-Area --*/
+/*-- 8. 404 Page --*/
+
+.content-404 {
+    padding: 150px 0;
+}
+
+/*-- 9. Footer-Area --*/
+
 .footer-area {
     background-color: #4f4f4f;
 }

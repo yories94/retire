@@ -15,25 +15,22 @@ get_header();
         <header class="jumbotron bg-happy">
             <div class="container small-container align-center font-white">
                 <h1>HappyLife Blog</h1>
-                <!-- <p>Where you can find all knowledge base in pursuit happiness</p>
-                <form>
-                    <div class="input-group mb-3">
-                        <input type="text" placeholder="Find here.." class="form-control" />
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="submit">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form> -->
+                <p>Where you can find all knowledge base</p>
+                
+                <?php get_search_form( ); ?>
+
             </div>
         </header>
         <!-- Header-Blog /-->
 
         <!-- Blog-Content -->
         <section>
+            <div class="grey-container">
+                <div class="container">
+                    <span>Home / Blog</span>
+                </div>
+            </div>
             <div class="container">
-                <span>Home / Blog</span>
                 <div class="row blog-container">
                     <div class="col-md-8">
                         
@@ -60,23 +57,16 @@ get_header();
                         <?php
                         if ( has_post_thumbnail( ) ) {
                         ?>
-                            <figure>
+                            <figure class="news-thumbnail">
                                 <?php the_post_thumbnail( ); ?>
-                            </figure>
-                        <?php
-                        }
-                        else {
-                        ?>
-                            <figure>
-                                <img src="<?php bloginfo( 'template_url' ); ?>/images/header-bg-2.jpg" alt="Gambar News">
                             </figure>
                         <?php
                         }
                         ?>
 
-                            <?php
-                            the_excerpt();
-                            ?>
+                        <?php
+                        the_excerpt();
+                        ?>
 
                         </div>
 
