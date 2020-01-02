@@ -2,17 +2,16 @@
 <html class="no-js" <?php language_attributes() ?>>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Yories yolanda" />
-    <meta name="description" content="<?php bloginfo( 'description' ); ?>">
-    <meta name="keywords"
-        content="Happylife, retire preparation, program mpp, happylife.co.id, happylife indonesia, PT. Solusi Hidup Bahagia" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="follow, index" />
-
     <!-- Title -->
     <title><?php bloginfo( 'title' ); ?></title>
+
+    <!-- Metas -->
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta name="description" content="<?php bloginfo( 'description' ); ?>">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="<?php bloginfo( 'template_url' ); ?>/images/HappyLife-putih.png">
