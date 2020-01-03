@@ -27,9 +27,9 @@
 
 <body data-spy="scroll" data-target=".mainmenu-area">
     <!--Preloader-->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="spinner"></div>
-    </div>
+    </div> -->
 
     <!-- Mainmenu-Area -->
     <nav class="navbar navbar-expand-md half-transparent fixed-top">
