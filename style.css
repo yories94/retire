@@ -20,10 +20,17 @@ CSS INDEX
 -----------------------------------------------------------------------------------*/
 
 /*-----------------
-1. Google font
+1. Adding font
 ------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700,900|Satisfy');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700,900|Satisfy'); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+@font-face {
+    font-family: 'Codec';
+    src: url('fonts/codec/Codec-Cold-News-trial.ttf') format('truetype'),
+         url('fonts/codec/Codec-Cold-News-Italic-trial.ttf') format('truetype');
+}
 
 /*-------------------
 2. Theme Default CSS
@@ -36,11 +43,11 @@ body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 1.8em;
-    color: #898989;
+    color: #797979;
 }
 
 a {
@@ -71,21 +78,16 @@ h3,
 h4,
 h5,
 h6 {
-    color: #4f4f4f;
-    font-family: 'Montserrat', sans-serif;
+    color: #3f3f3f;
+    font-family: 'Codec', sans-serif;
     margin: 0 0 15px;
     font-weight: 600;
     line-height: 1.4em;
 }
 
-.satisfy {
-    font-family: 'Satisfy', cursive;
-}
-
 h2 {
     font-size: 36px;
 }
-
 
 /* Remove Chrome Input Field's Unwanted Yellow Background Color */
 

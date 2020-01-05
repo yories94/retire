@@ -5,13 +5,13 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-3">
                         <div class="footer-text">
-                            <h4 class="upper"><?php bloginfo( 'title' ); ?></h4>
+                            <h4><?php bloginfo( 'title' ); ?></h4>
                             <p><?php bloginfo( 'description' ); ?></p>
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-2 col-md-offset-1">
                         <div class="footer-single">
-                            <h4 class="upper">Events</h4>
+                            <h4>Events</h4>
                             
                             <?php
                             wp_nav_menu( array(
@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-xs-6 col-md-2">
                         <div class="footer-single">
-                            <h4 class="upper">News</h4>
+                            <h4>News</h4>
 
                             <?php
                             wp_nav_menu( array(
@@ -41,7 +41,7 @@
                     </div>
                     <div class="col-xs-6 col-md-2">
                         <div class="footer-single">
-                            <h4 class="upper">Media</h4>
+                            <h4>Media</h4>
                             <ul>
                                 <a href="https://www.instagram.com/happylifesolution/"><i
                                         class="icofont icofont-social-instagram"> Instagram</i></a>
@@ -50,7 +50,7 @@
                     </div>
                     <div class="col-xs-6 col-md-2">
                         <div class="footer-single">
-                            <h4 class="upper">About</h4>
+                            <h4>About</h4>
                             <ul>
                                 <li>halo@happylife.co.id</li>
                             </ul>
