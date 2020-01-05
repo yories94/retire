@@ -15,7 +15,7 @@
     
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="<?php bloginfo( 'template_url' ); ?>/images/HappyLife-putih.png">
-    <link rel="shortcut icon" type="image/ico" href="<?php bloginfo( 'template_url' ); ?>/images/HappyLife-2.png" />
+    <link rel="shortcut icon" type="image/ico" href="<?php bloginfo( 'template_url' ); ?>/images/Favicon.png" />
 
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
