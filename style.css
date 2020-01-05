@@ -317,6 +317,10 @@ input:-webkit-autofill:focus {
     border-bottom: 1px solid #d6d6d6;
 }
 
+.news h2 {
+    margin-bottom: 0;
+}
+
 .news-thumbnail {
     border: 1px solid #eeeeee;
 }
