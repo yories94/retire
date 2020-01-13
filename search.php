@@ -42,16 +42,17 @@ get_header();
                     
                     <?php
 
-                    // Display all post here
-                    while ( have_posts() ) :
-                        the_post();
+                    if ( have_posts( ) ) :
+                        // Display all post here
+                        while ( have_posts( ) ) :
+                            the_post();
                     ?>
 
                         <div class="news">
                             <h2><?php the_title( ); ?></h2>
                             <div class="news-meta">
-                                <span>By <?php the_author( ); ?>, </span>
-                                <span><?php the_date( ); ?></span>
+                                <span><i class="icofont-business-man"></i> <?php the_author( ); ?></span>
+                                <span><i class="icofont-calendar"></i> <?php the_date( 'j F Y' ); ?></span>
                             </div>
 
                         <?php
@@ -71,15 +72,23 @@ get_header();
                         </div>
 
                     <?php
-                    endwhile;
-                    wp_pagenavi();
+                        endwhile;
+                        wp_pagenavi();
                     ?>
 
                     </div>
 
                     <?php
-                    get_sidebar( );
+                    else:
                     ?>
+                        <p class="post-not-found">
+                            Sorry, we don't have post(s) with word or title 
+                            '<?php echo get_search_query( ); ?>'
+                        </p>
+                    <?php
+                    endif;
+                    ?>
+                    <?php get_sidebar( ); ?>
                 </div>
             </div>
         </section>

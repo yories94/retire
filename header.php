@@ -11,7 +11,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="<?php bloginfo( 'template_url' ); ?>/images/HappyLife-putih.png">
@@ -35,7 +35,7 @@
     <nav class="navbar navbar-expand-md half-transparent fixed-top">
         <div class="container">
             <!-- Brand/logo -->
-            <a class="navbar-brand" href="#" style="margin-right: 1.5rem;">
+            <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>" style="margin-right: 1.5rem;">
                 <img src="<?php bloginfo( 'template_url' ); ?>/images/HappyLife-putih.png">
             </a>
     

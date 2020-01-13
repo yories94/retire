@@ -65,8 +65,8 @@ get_header();
                         <div class="news">
                             <h2><?php the_title( ); ?></h2>
                             <div class="news-meta">
-                                <span>By <?php the_author( ); ?>, </span>
-                                <span><?php the_date( ); ?></span>
+                                <span><i class="icofont-business-man"></i> <?php the_author( ); ?></span>
+                                <span><i class="icofont-calendar"></i> <?php the_date( 'j F Y' ); ?></span>
                             </div>
 
                         <?php

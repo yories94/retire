@@ -38,17 +38,36 @@ if ( ! function_exists( 'register_widgets' ) ) {
 
 	function register_widgets() {
 		register_sidebar( array(
-			'name' => __( 'Main Sidebar', 'wpb' ),
-			'id'   => 'blog_sidebar',
-			'description' => __( 'Sidebar untuk halaman blog', 'wbp' ),
+			'name' 			=> __( 'Main Sidebar', 'wpb' ),
+			'id'   			=> 'blog_sidebar',
+			'description'   => __( 'Sidebar untuk halaman blog', 'wbp' ),
 			'before_widget' => '<div class="widgt-padding widgt">',
-			'after_widget' => '</div>',
-			'before_title' => '',
-			'after_title' => ''
+			'after_widget'  => '</div>',
+			'before_title'  => '',
+			'after_title'   => ''
+		) );
+
+		register_sidebar( array(
+			'name' 			=> __( 'Social Media', 'wpbs' ),
+			'id'   			=> 'footer_social_media',
+			'description'   => __( 'Bagian kolom footer untuk social media', 'wpbs' ),
+			'before_widget' => '<div class="widgt-padding widgt">',
+			'after_widget'  => '</div>',
+			'before_title'  => '',
+			'after_title'   => ''
 		) );
 	}
 }
 add_action( 'widgets_init', 'register_widgets' );
+
+// Filter to exclude pages from Wordpress search result
+function filter_search( $query ) {
+	if ( $query->is_search ) {
+		$query->set( 'post_type', 'post' );
+	}
+	return $query;
+}
+add_filter( 'pre_get_posts', 'filter_search' );
 
 /* 
  * Blog and Article Settings
@@ -83,8 +102,8 @@ function add_stylesheets() {
 		'bootstrap.min'    => $base . '/css/bootstrap.min.css',
 		'font-awesome.min' => 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
 		'animate.min'      => $base . '/css/animate.min.css',
-		'style'			   => $base . '/style.css',
-		'responsive'       => $base . '/css/responsive.css'
+		'icofont.min'	   => $base . '/css/icofont.min.css',
+		'style'			   => $base . '/style.css'
 	);
 
 	foreach ( $arrStyles as $name => $address_url ) {
