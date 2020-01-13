@@ -26,12 +26,6 @@ CSS INDEX
 /* @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700,900|Satisfy'); */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
 
-@font-face {
-    font-family: 'Codec';
-    src: url('fonts/codec/Codec-Cold-News-trial.ttf') format('truetype'),
-         url('fonts/codec/Codec-Cold-News-Italic-trial.ttf') format('truetype');
-}
-
 /*-------------------
 2. Theme Default CSS
 --------------------*/
@@ -79,7 +73,7 @@ h4,
 h5,
 h6 {
     color: #3f3f3f;
-    font-family: 'Codec', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0 0 15px;
     font-weight: 600;
     line-height: 1.4em;
@@ -232,6 +226,11 @@ input:-webkit-autofill:focus {
     color: #fefefe;
 }
 
+.navbar-nav {
+    flex-basis: 100%;
+    justify-content: right;
+}
+
 .navbar-nav a {
     display: inline-block;
     padding: 5px 8px;
@@ -242,6 +241,16 @@ input:-webkit-autofill:focus {
 }
 .navbar-nav a:hover {
     border-bottom-color: #fefefe;
+}
+
+.contact-info {
+    padding: 30px 50px;
+    background: #a1c4fd;
+    border-radius: 3px;
+}
+
+.contact-info * {
+    color: #ffffff;
 }
 
 /*-- 6. Jumbotron-Blog-Area --*/
@@ -333,9 +342,63 @@ input:-webkit-autofill:focus {
     padding-bottom: 15px;
 }
 
+.news-meta span {
+    font-size: 15px;
+    color: #333333;
+}
+
+.news-meta span:nth-child(1) {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
 .news p, .news-read p {
     font-size: 16px;
     line-height: 2;
+}
+
+.news-read h2 {
+    margin-bottom: 0;
+}
+
+.news-read p img {
+    display: block; 
+    margin: auto; 
+}
+
+.wp-caption {
+    position: relative;
+    margin: 8px auto;
+}
+.wp-caption img {
+    width: 100%;
+}
+.wp-caption-text {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.6);
+    padding: 5px 0; 
+    text-align: center;
+    color: #ffffff;
+}
+
+.post-not-found {
+    padding: 20px 0;
+    text-align: center;
+    color: #6f6f6f;
+}
+
+@media (max-width: 991px) {
+    .news-read p img {
+        width: 100%;
+    }
+    .wp-caption { width: 100% !important; }
+
+    .wp-caption img {
+        display: block;
+    }
 }
 
 .cat-item {

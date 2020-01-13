@@ -25,22 +25,27 @@ get_header();
 
         <!-- Blog-Content -->
         <section>
+            
+            <?php        
+            // Display all post here
+            while ( have_posts() ) :
+                the_post();
+            ?>
+
+            <div class="grey-container">
+                <div class="container">
+                    <span>Home / Blog / <?php the_title(); ?></span>
+                </div>
+            </div>
             <div class="container">
                 <div class="row blog-container">
                     <div class="col-md-8">
-                        
-                    <?php
-                    
-                    // Display all post here
-                    while ( have_posts() ) :
-                        the_post();
-                    ?>
 
                         <div class="news-read">
                             <h2><?php the_title( ); ?></h2>
                             <div class="news-meta">
-                                <span><?php the_author( ); ?></span>
-                                <span><?php the_date( ); ?></span>
+                                <span><i class="icofont-business-man"></i> <?php the_author( ); ?></span>
+                                <span><i class="icofont-calendar"></i> <?php the_date( 'j F Y' ); ?></span>
                             </div>
 
                         <?php

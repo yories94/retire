@@ -3,13 +3,13 @@
         <div class="footer-top section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-3">
+                    <div class="col-xs-12 col-md-4">
                         <div class="footer-text">
                             <h4><?php bloginfo( 'title' ); ?></h4>
                             <p><?php bloginfo( 'description' ); ?></p>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-2 col-md-offset-1">
+                    <div class="col-xs-6 col-md-2">
                         <div class="footer-single">
                             <h4>Events</h4>
                             
@@ -42,10 +42,25 @@
                     <div class="col-xs-6 col-md-2">
                         <div class="footer-single">
                             <h4>Media</h4>
-                            <ul>
+                            <!-- <ul>
                                 <a href="https://www.instagram.com/happylifesolution/"><i
                                         class="icofont icofont-social-instagram"> Instagram</i></a>
-                            </ul>
+                            </ul> -->
+                            <?php
+                            // Display social media widgets
+                            if ( is_active_sidebar( 'footer_social_media' ) ) {
+                            ?>
+
+                                <div>
+                                    <?php
+                                    dynamic_sidebar( 'footer_social_media' );
+                                    ?>
+                                </div>
+
+                            <?php
+                            }
+                            ?>
+                            
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-2">
