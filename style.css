@@ -243,6 +243,16 @@ input:-webkit-autofill:focus {
     border-bottom-color: #fefefe;
 }
 
+@media only screen and (max-width: 767px) {
+    .navbar-nav a {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
 .contact-info {
     padding: 30px 50px;
     background: #a1c4fd;
