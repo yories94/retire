@@ -40,7 +40,7 @@
     
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <i class="fa fa-bars" style="font-size: 24px;"></i>
+                <i class="icofont-navigation-menu"></i>
             </button>
                 
             <!-- Links -->

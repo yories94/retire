@@ -3,7 +3,7 @@
         <input type="text" name="s" id="search_form" placeholder="Type your search here.." class="form-control" value="<?php get_search_query( ); ?>" />
         <div class="input-group-append">
             <button class="btn btn-primary" type="submit">
-                <i class="fa fa-search"></i>
+                <i class="icofont-search-2" style="font-size: 24px;"></i>
             </button>
         </div>
     </div>
