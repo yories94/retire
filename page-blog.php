@@ -68,6 +68,7 @@ get_header();
                         the_excerpt();
                         ?>
 
+                            <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-lg btn-center">Read More</a>
                         </div>
 
                 <?php
@@ -76,8 +77,7 @@ get_header();
                 else:
                 ?>
                     <p class="post-not-found">
-                        Sorry, we don't have post(s) with word or title 
-                        '<?php echo get_search_query( ); ?>'
+                        Sorry, we don't have post(s)
                     </p>
                 <?php
                 endif;

@@ -7,7 +7,6 @@
 
     <!-- Metas -->
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <meta name="description" content="<?php bloginfo( 'description' ); ?>">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />

@@ -69,6 +69,7 @@ get_header();
                         the_excerpt();
                         ?>
 
+                            <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-lg btn-center">Read More</a>
                         </div>
 
                     <?php

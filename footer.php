@@ -3,13 +3,13 @@
         <div class="footer-top section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
                         <div class="footer-text">
                             <h4><?php bloginfo( 'title' ); ?></h4>
                             <p><?php bloginfo( 'description' ); ?></p>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-2">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                         <div class="footer-single">
                             <h4>Events</h4>
                             
@@ -24,7 +24,7 @@
                             
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-2">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                         <div class="footer-single">
                             <h4>News</h4>
 
@@ -39,9 +39,9 @@
 
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-2">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div class="footer-single">
-                            <h4>Media</h4>
+                            <h4>Social Media</h4>
                             <!-- <ul>
                                 <a href="https://www.instagram.com/happylifesolution/"><i
                                         class="icofont icofont-social-instagram"> Instagram</i></a>
@@ -62,13 +62,11 @@
                             ?>
                             
                         </div>
-                    </div>
-                    <div class="col-xs-6 col-md-2">
                         <div class="footer-single">
-                            <h4>About</h4>
-                            <ul>
-                                <li>halo@happylife.co.id</li>
-                            </ul>
+                            <h4>Company Address</h4>
+                            <address>Jalan Achmad Wahid, Sampangan Kelurahan Baturetno, Yogyakarta</address>
+                            <h4>Email</h4>
+                            <span>halo@happylife.co.id</span>
                         </div>
                     </div>
                 </div>

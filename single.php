@@ -47,6 +47,9 @@ get_header();
                                 <span><i class="icofont-business-man"></i> <?php the_author( ); ?></span>
                                 <span><i class="icofont-calendar"></i> <?php the_date( 'j F Y' ); ?></span>
                             </div>
+                            <div class="excerpt-section">
+                                <?php the_excerpt(); ?>
+                            </div>
 
                         <?php
                         if ( has_post_thumbnail( ) ) {
@@ -58,9 +61,11 @@ get_header();
                         }
                         ?>
 
-                        <?php
-                        the_content();
-                        ?>
+                            <article>
+                                <?php
+                                the_content();
+                                ?>
+                            </article>
 
                         </div>
 
