@@ -36,9 +36,10 @@ get_header();
 
                     <?php
 
-                    // Display all post here
-                    while ( have_posts() ) :
-                        the_post();
+                    if ( have_posts( ) ) :
+                        // Display all post here
+                        while ( have_posts() ) :
+                            the_post();
                     ?>
 
                         <div class="news">
@@ -49,7 +50,7 @@ get_header();
                             </div>
 
                         <?php
-                        if ( has_post_thumbnail( ) ) {
+                            if ( has_post_thumbnail( ) ) {
                         ?>
                             <figure class="news-thumbnail">
                                 <?php the_post_thumbnail( ); ?>
@@ -62,13 +63,20 @@ get_header();
                         the_excerpt();
                         ?>
 
+                            <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-lg btn-center">Read More</a>
                         </div>
 
                     <?php
-                    endwhile;
-                    wp_pagenavi();
+                        endwhile;
+                        wp_pagenavi();
+                    else :
                     ?>
-
+                        <p class="post-not-found">
+                            Sorry, we don't have post(s)
+                        </p>
+                    <?php 
+                    endif;
+                    ?>
                     </div>
 
                     <?php

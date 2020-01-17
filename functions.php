@@ -82,11 +82,35 @@ add_filter( 'excerpt_length', 'new_excerpt_length' );
 // Changing excerpt more
 function new_excerpt_more( $more ) {
 	
-	return '&hellip; <a href="' . get_the_permalink() . '" 
-			class="btn btn-primary btn-lg btn-center">Read More</a>';
+	return '...';
+
+	// return '&hellip; <a href="' . get_the_permalink() . '" 
+	// 		class="btn btn-primary btn-lg btn-center">Read More</a>';
 
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+// Adding dynamic meta description function
+function add_dynamic_meta_desc() {
+
+	global $post;
+
+	// Return the excerpt() if it exists other truncate
+	if ( ! empty( $post->post_excerpt ) ) {
+		$content = $post->post_excerpt;
+	} else if ( ! empty( $post->post_content ) ) {
+		$content = wp_trim_words( $post->post_content, 40, '...' );
+	} else {
+		return;
+	}
+
+	?>
+	<meta name="description" content="<?php echo esc_attr( strip_tags( stripslashes( $content ) ) ); ?>" />
+	<?php
+}
+
+// Add post type support
+add_post_type_support( 'page', 'excerpt' );
 
 /* 
  * Adding all stylesheets and scripts for theme
