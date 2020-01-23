@@ -76,7 +76,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <p class="copyright">
-                    &copy;2019 - <?php echo date('Y'); ?> All rights reserved
+                    &copy;2019 - <?php echo date('Y'); ?> PT Solusi Hidup Bahagia, all rights reserved.
                 </p>
             </div>
         </div>
