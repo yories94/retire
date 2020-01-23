@@ -80,10 +80,9 @@ get_header();
                         ?>
 
                         <?php
-                        the_excerpt();
+                        the_excerpt( );
                         ?>
 
-                            <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-lg btn-center">Read More</a>
                         </div>
 
                     <?php

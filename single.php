@@ -48,7 +48,18 @@ get_header();
                                 <span><i class="icofont-calendar"></i> <?php the_date( 'j F Y' ); ?></span>
                             </div>
                             <div class="excerpt-section">
-                                <?php the_excerpt(); ?>
+                                <?php
+                                // display excerpt of post from yoast
+                                $meta = get_post_meta( get_the_ID( ),'_yoast_wpseo_metadesc', true );
+                                if ( ! empty( $meta ) ) {
+                                    echo $meta;
+                                }
+
+                                // display custom excerpt if available
+                                if ( has_excerpt( ) ) {
+                                    the_excerpt( );
+                                }
+                                ?>
                             </div>
 
                         <?php

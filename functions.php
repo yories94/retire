@@ -82,10 +82,10 @@ add_filter( 'excerpt_length', 'new_excerpt_length' );
 // Changing excerpt more
 function new_excerpt_more( $more ) {
 	
-	return '...';
+	// return '...';
 
-	// return '&hellip; <a href="' . get_the_permalink() . '" 
-	// 		class="btn btn-primary btn-lg btn-center">Read More</a>';
+	return '&hellip; <a href="' . get_the_permalink() . '" 
+			class="btn btn-primary btn-lg btn-center">Read More</a>';
 
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );

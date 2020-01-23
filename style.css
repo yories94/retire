@@ -349,7 +349,7 @@ input:-webkit-autofill:focus {
 }
 
 .news-meta {
-    padding-bottom: 15px;
+    padding-bottom: 7px;
 }
 
 .news-meta span {
@@ -371,8 +371,8 @@ input:-webkit-autofill:focus {
     margin-bottom: 0;
 }
 
-.excerpt-section p {
-    margin-bottom: 30px;
+.excerpt-section {
+    margin-bottom: 20px;
     font-size: 18px;
     color: #999999;
 }
