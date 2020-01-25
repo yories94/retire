@@ -11,13 +11,33 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+
+    <!-- apple touch icon -->
+    <link rel="apple-touch-icon" href="<?php bloginfo( 'template_url' ); ?>/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php bloginfo( 'template_url' ); ?>/apple-touch-icon-152x152.png">
     
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" href="<?php bloginfo( 'template_url' ); ?>/images/HappyLife-putih.png" />
-    <link rel="shortcut icon" type="image/ico" href="<?php bloginfo( 'template_url' ); ?>/images/Favicon.png" />
+    <!-- browser icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo( 'template_url' ); ?>/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo( 'template_url' ); ?>/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="<?php bloginfo( 'template_url' ) ?>/favicon.ico">
+
+    <!-- safari and mac icon -->
+    <link rel="manifest" href="<?php bloginfo( 'template_url' ); ?>/site.webmanifest">
+    <link rel="mask-icon" href="<?php bloginfo( 'template_url' ); ?>/safari-pinned-tab.svg" color="#2260b4">
+    
+    <!-- microsoft icon -->
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="<?php bloginfo( 'template_url' ); ?>/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="<?php bloginfo( 'template_url' ); ?>/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="<?php bloginfo( 'template_url' ); ?>/mstile-150x150.png">
+    <meta name="msapplication-square310x310logo" content="<?php bloginfo( 'template_url' ); ?>/mstile-310x310.png">
+    <meta name="msapplication-wide310x150logo" content="<?php bloginfo( 'template_url' ); ?>/mstile-310x150.png">
+    <meta name="msapplication-config" content="<?php bloginfo( 'template_url' ) ?>/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="application-name" content="HappyLife Indonesia">
 
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Playfair+Display&display=swap" rel="stylesheet">
 
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
