@@ -62,7 +62,7 @@
                             ?>
                             
                         </div>
-                        <div class="footer-single">
+                        <div class="footer-single company-reach">
                             <h4>Company Address</h4>
                             <address>Jalan Achmad Wahid, Sampangan Kelurahan Baturetno, Yogyakarta</address>
                             <h4>Email</h4>
