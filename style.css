@@ -39,7 +39,7 @@ body {
 body {
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8em;
     color: #797979;
 }
@@ -362,7 +362,7 @@ input:-webkit-autofill:focus {
 }
 
 .news p, .news-read p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2;
 }
 
@@ -492,7 +492,7 @@ input:-webkit-autofill:focus {
 /*-- 9. Footer-Area --*/
 
 .footer-area {
-    background-color: #4f4f4f;
+    background-color: #2f2f2f;
 }
 
 .footer-single ul {
@@ -502,7 +502,19 @@ input:-webkit-autofill:focus {
 }
 
 .footer-single h4, .footer-text h4 {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
     color: #fefefe;
+}
+.footer-single h4::before, .footer-text h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 0;
+    border-bottom: 5px solid #0069d9;
 }
 
 @media only screen and (max-width: 767px) {
@@ -516,18 +528,23 @@ input:-webkit-autofill:focus {
 .footer-single ul li a, 
 .footer-single ul a,
 .footer-single ul li ,
-.footer-bottom p { color: #d3d3d3; }
+.footer-bottom p { color: #939393; }
 
 .footer-single ul li {
     padding: 5px 0;
 }
 
+.footer-single ul li a {
+    text-decoration: none;
+    transition: color 0.23s;
+}
+
 .footer-single ul li a:hover {
-    text-decoration: underline;
+    color: #fefefe;
 }
 
 .footer-single > address, .footer-single > span {
-    color: #d3d3d3;
+    color: #939393;
 }
 
 .footer-area .social-menu a {
@@ -541,6 +558,7 @@ input:-webkit-autofill:focus {
     border-top: 1px solid #959595;
     text-align: center;
     padding: 30px;
+    color: #fefefe;
 }
 
 .footer-bottom p {
