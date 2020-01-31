@@ -37,7 +37,7 @@ body {
 }
 
 body {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Montserrat 400', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8em;
@@ -72,7 +72,7 @@ h4,
 h5,
 h6 {
     color: #3f3f3f;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Montserrat 600', sans-serif;
     margin: 0 0 15px;
     font-weight: 600;
     line-height: 1.4em;
@@ -421,14 +421,6 @@ input:-webkit-autofill:focus {
     color: #6f6f6f;
 }
 
-.cat-item {
-    display: inline-block; 
-    margin-bottom: 9px;
-    padding: 6px 13px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-}
-
 .pagination {
     padding: 30px 0;
     text-align: center;
@@ -449,10 +441,23 @@ input:-webkit-autofill:focus {
     list-style: none;
 }
 
+.widgt ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
 .widgt ul li a {
     display: block;
     font-size: 16px;
     font-weight: lighter;
+}
+
+.widgt ul li.cat-item {
+    display: inline-block; 
+    margin-bottom: 9px;
+    padding: 6px 13px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
 }
 
 .btn-center {
@@ -514,7 +519,7 @@ input:-webkit-autofill:focus {
     bottom: 0;
     width: 50px;
     height: 0;
-    border-bottom: 5px solid #0069d9;
+    border-bottom: 3px solid #1aa3ff;
 }
 
 @media only screen and (max-width: 767px) {
