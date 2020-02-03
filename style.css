@@ -255,7 +255,7 @@ input:-webkit-autofill:focus {
 .contact-info {
     padding: 30px 50px;
     background: #a1c4fd;
-    border-radius: 3px;
+    border-radius: 11px;
 }
 
 .contact-info * {
@@ -279,8 +279,9 @@ input:-webkit-autofill:focus {
 }
 
 .bg-happy {
-    background-image: url("images/header-bg-transp.png");
+    background-image: url("images/header-min.jpg");
     background-repeat: no-repeat;
+    background-position-y: -160px;
     background-size: cover;
 }
 
@@ -298,6 +299,15 @@ input:-webkit-autofill:focus {
     color: #fefefe;
 }
 
+.font-white h1 {
+    margin: 3px; 
+    font-size: 45px; 
+}
+
+.font-white p {
+    margin-bottom: 40px;
+}
+
 .input-group-append .btn {
     padding-left: 1.5em;
     padding-right: 1.5em;
@@ -310,7 +320,10 @@ input:-webkit-autofill:focus {
     padding: 10px 0;
 }
 
-.grey-container span { color: #666666;}
+.grey-container span {
+    font-size: 14px; 
+    color: #666666;
+}
 
 .blog-container {
     padding-top: 50px;
@@ -337,6 +350,7 @@ input:-webkit-autofill:focus {
 
 .news h2 {
     margin-bottom: 0;
+    color: #0069d9;
 }
 
 .news-thumbnail {
@@ -348,7 +362,7 @@ input:-webkit-autofill:focus {
 }
 
 .news-meta {
-    padding-bottom: 7px;
+    margin-bottom: 23px;
 }
 
 .news-meta span {
@@ -358,7 +372,6 @@ input:-webkit-autofill:focus {
 
 .news-meta span:nth-child(1) {
     display: inline-block; 
-    margin-right: 10px; 
 }
 
 .news p, .news-read p {
@@ -368,6 +381,7 @@ input:-webkit-autofill:focus {
 
 .news-read h2 {
     margin-bottom: 0;
+    color: #0069d9;
 }
 
 .excerpt-section {
@@ -435,6 +449,23 @@ input:-webkit-autofill:focus {
     font-weight: bold;
 }
 
+.widgt h3 {
+    position: relative;
+    padding-bottom: 17px;
+    color: #1aa3ff;
+    font-size: 27px;
+}
+
+.widgt h3::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+    height: 0;
+    border-bottom: 3px solid #333333;
+}
+
 .widgt ul {
     margin: 0;
     padding: 10px 0 0 0;
@@ -442,8 +473,18 @@ input:-webkit-autofill:focus {
 }
 
 .widgt ul li {
+    position: relative;
     padding: 10px 0;
     border-bottom: 1px solid #d9d9d9;
+}
+
+.widgt ul li::before {
+    content: '';
+    position: absolute;
+    left: -21px;
+    top: 20px;
+    border-radius: 50%;
+    border: 5px solid #1aa3ff;
 }
 
 .widgt ul li a {
@@ -453,11 +494,19 @@ input:-webkit-autofill:focus {
 }
 
 .widgt ul li.cat-item {
+    position: relative;
     display: inline-block; 
     margin-bottom: 9px;
     padding: 6px 13px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
+}
+
+.widgt ul li.cat-item::before {
+    content: '';
+    position: absolute;
+    border: none;
+    border-radius: none;
 }
 
 .btn-center {

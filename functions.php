@@ -43,8 +43,8 @@ if ( ! function_exists( 'register_widgets' ) ) {
 			'description'   => __( 'Sidebar untuk halaman blog', 'wbp' ),
 			'before_widget' => '<div class="widgt-padding widgt">',
 			'after_widget'  => '</div>',
-			'before_title'  => '',
-			'after_title'   => ''
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>'
 		) );
 
 		register_sidebar( array(
