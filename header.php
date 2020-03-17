@@ -53,6 +53,47 @@
         <div class="spinner"></div>
     </div> -->
 
+    <?php
+    // $halaman = is_front_page();
+    $halaman = get_the_title( );
+
+    if ($halaman == 'Homepage Happylife') :
+    ?>
+
+    <!-- Headermenu -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <!-- Brand/logo -->
+            <a class="logo-happylife" href="#">
+                <img src="<?php bloginfo( 'template_url' ); ?>/images/happylife_logo.png">
+            </a>
+            
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="icofont-navigation-menu" style="color: #1d7dbe;font-size: 34px;"></i>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                
+                <?php
+                // Display main navigation
+                wp_nav_menu( array(
+                    'theme_location' => 'header_menu',
+                    'menu_class'     => 'navbar-nav navigasi-utama',
+                    'menu_id'        => '',
+                    'container'      => ''
+                ) );
+                ?>
+
+            </div>
+        </div>
+    </nav>    
+
+    <?php
+    else:
+    ?>
+
     <!-- Mainmenu-Area -->
     <nav class="navbar navbar-expand-md half-transparent fixed-top">
         <div class="container">
@@ -72,7 +113,7 @@
                 // Display main navigation
                 wp_nav_menu( array(
                     'theme_location' => 'header_menu',
-                    'menu_class'     => 'navbar-nav',
+                    'menu_class'     => 'navbar-nav navigasi-fixed',
                     'menu_id'        => '',
                     'container'      => ''
                 ) );
@@ -81,3 +122,7 @@
         </div>
     </nav>
     <!-- Mainmenu-Area-/ -->
+
+    <?php
+    endif;
+    ?>

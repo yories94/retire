@@ -127,6 +127,8 @@ function add_stylesheets() {
 		'font-awesome.min' => 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
 		'animate.min'      => $base . '/css/animate.min.css',
 		'icofont.min'	   => $base . '/css/icofont.min.css',
+		'owl.carousel.min' => 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css',
+		'owl.theme.min'	   => 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css',
 		'style'			   => $base . '/style.css'
 	);
 
@@ -146,7 +148,7 @@ function add_scripts() {
 		'modernizr' => $base . '/js/vendor/modernizr-2.8.3.min.js',
 		'jquery' => $base . '/js/vendor/jquery-1.12.4.min.js',
 		'bootstrap.min' => $base . '/js/vendor/bootstrap.min.js',
-		
+		'owl.carousel.min' => 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js',
 		'main' => $base . '/js/main.js'
 	);
 
