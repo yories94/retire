@@ -271,7 +271,7 @@ input:-webkit-autofill:focus {
 }
 
 .padding-top-med {
-    padding-top: 3rem;
+    padding-top: 6rem;
 }
 
 .padding-bottom-sm {
@@ -279,15 +279,10 @@ input:-webkit-autofill:focus {
 }
 
 .padding-bottom-med {
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
 }
 
 /*--- 1. Main-navigation ---*/
-
-/* .navbar-nav {
-    flex-basis: 100%;
-    justify-content: flex-end;
-} */
 
 .logo-happylife {
     width: auto;
@@ -311,7 +306,7 @@ input:-webkit-autofill:focus {
 /*--- 2. Header ---*/
 
 .happy-header-bg {
-    padding: 6rem 0 11.7rem 0;
+    padding: 6rem 0 11.5rem 0;
     /* image, position, size, repeat, attachment, origin, clip, color */
     background-image: url('images/asset_rumput.png'),
                       url('images/header_atas.png');
@@ -347,26 +342,26 @@ input:-webkit-autofill:focus {
 }
 
 .happy-header-text h1 {
-    font-weight: 400;
-    font-size: 55px;
+    font-weight: bold;
+    font-size: 45px;
     color: #1d7dbe;
 }
 
 .happy-header-text p {
-    margin-bottom: 40px;
-    font-size: 25px;
+    margin-bottom: 65px;
+    font-size: 20px;
     color: #1d7dbe;
 }
 
 .happy-button-cta {
     display: inline-block;
     width: 200px;
-    padding: 15px 20px;
+    padding: 12px 20px;
     background-color: #1d7dbe;
     border-radius: 5px;
     color: white;
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     transition: background-color 0.22s, color 0.21s;
 }
 
@@ -396,9 +391,23 @@ input:-webkit-autofill:focus {
         width: 360px;
         height: 360px;
     }
+
+    .happy-header-text p {
+        margin-bottom: 50px;
+        font-size: 20px;
+        color: #1d7dbe;
+    }
 }
 
 @media only screen and (max-width: 991px) {
+    .padding-top-med {
+        padding-top: 3rem;
+    }
+    
+    .padding-bottom-med {
+        padding-bottom: 3rem;
+    }
+
     .happy-header-bg {
         /* image, position, size, repeat, attachment, origin, clip, color */
         background-image: url('images/asset_rumput.png'),
