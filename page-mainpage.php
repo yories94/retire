@@ -26,10 +26,10 @@ get_header();
             <div class="about-us">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 company-image">
+                        <div class="offset-lg-1 col-lg-4 company-image">
                             <img src="<?php bloginfo( 'template_url' ); ?>/images/asset_rumah.png" class="img-fluid">
                         </div>
-                        <div class="offset-lg-1 col-lg-6 about-us-text">
+                        <div class="col-lg-6 about-us-text">
                             <h2>Persiapan Pensiun Merupakan Hal Wajib</h2>
                             <p>Pensiun bukan ujung dari suatu jalan, tetapi merupakan awal dari jalan yang lebih luas. MPP bukanlah akhir dari segalanya, tetapi segala hal membutuhkan persiapan dari segi finansial, mental, fisik, gaya hidup dan sesuai dengan keinginan untuk memilih jalur yang diminati.</p>
                         </div>
