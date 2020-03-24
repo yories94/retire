@@ -769,18 +769,11 @@ input:-webkit-autofill:focus {
     border-radius: 0;
 }
 
-@media (min-width: 576px) {
-    .jumbotron { 
-        padding-top: 9rem;
-        padding-bottom: 4.5rem;
-    }
-}
-
 .bg-happy {
-    background-image: url("images/header-min.jpg");
+    /* background-image: url("images/header-min.jpg"); */
+    background-image: url('images/asset_bgblog.png');
     background-repeat: no-repeat;
-    background-position-y: -160px;
-    background-size: cover;
+    background-size: 100% 113%;
 }
 
 .small-container {
@@ -794,7 +787,8 @@ input:-webkit-autofill:focus {
 
 .font-white h1, 
 .align-center p {
-    color: #fefefe;
+    /* color: #fefefe; */
+    color: #333333;
 }
 
 .font-white h1 {
@@ -809,6 +803,28 @@ input:-webkit-autofill:focus {
 .input-group-append .btn {
     padding-left: 1.5em;
     padding-right: 1.5em;
+}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 991px) {
+    .bg-happy {
+        background-size: 1000px 450px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .bg-happy {
+        background-size: 900px 450px;
+        background-position-x: -120px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .jumbotron { 
+        padding-top: 9rem;
+        padding-bottom: 4.5rem;
+    }
 }
 
 /*-- 7. Blog Area --*/
@@ -846,13 +862,34 @@ input:-webkit-autofill:focus {
     border-bottom: 1px solid #d6d6d6;
 }
 
-.news h2 {
+.news h1 {
     margin-bottom: 0;
-    color: #0069d9;
+    /* color: #1aa3ff; */
+    color: #333333;
+}
+
+.news h2 {
+    /* color: #1aa3ff; */
+    color: #333333;
+    font-size: 2.5rem;
 }
 
 .news-thumbnail {
+    width: 60%;
+    margin-right: 1.5rem;
     border: 1px solid #eeeeee;
+    float: left;
+}
+
+#dpsp-content-top { 
+    margin-right: 1.5rem;
+    margin-bottom: 0; 
+}
+
+.dpsp-content-wrapper {
+    width: 60%;
+    float: left;
+    clear: both;
 }
 
 .news-read {
@@ -877,10 +914,15 @@ input:-webkit-autofill:focus {
     line-height: 2;
 }
 
-.news-read h2 {
+.news-read h1 {
     margin-bottom: 0;
-    color: #0069d9;
+    /* color: #1aa3ff; */
+    color: #333333;
 }
+
+.news-read h2 { font-size: 2rem; }
+
+.news-read h3 { font-size: 1.5rem; }
 
 .excerpt-section {
     margin-bottom: 20px;
