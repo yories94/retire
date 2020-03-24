@@ -16,5 +16,8 @@
         itemsTablet: [768, 3],
         itemsDesktopSmall: [991, 4]
     });
+
+    // Start the AOS
+    AOS.init();
     
 })(jQuery);
