@@ -857,10 +857,18 @@ input:-webkit-autofill:focus {
 }
 
 .news {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 80px;
     padding-bottom: 80px;
     border-bottom: 1px solid #d6d6d6;
+    transition: color 0.13s;
 }
+
+.news:hover { color: inherit; }
+
+.section-1 { flex-basis: 45%; }
+.section-2 { flex-basis: 50%; }
 
 .news h1 {
     margin-bottom: 0;
@@ -872,14 +880,26 @@ input:-webkit-autofill:focus {
     /* color: #1aa3ff; */
     color: #333333;
     font-size: 2.5rem;
+    transition: color 0.21s;
 }
 
-.news-thumbnail {
-    width: 60%;
+.news:hover h2 { color: #1aa3ff; }
+
+.news figure {
+    width: 100%;
     margin-right: 1.5rem;
     border: 1px solid #eeeeee;
-    float: left;
 }
+
+@media only screen and (max-width: 1200px) {
+    .news h2 { font-size: 2rem; }
+}
+
+@media only screen and (max-width: 991px) {
+    .news, .section-1, .section-2 { display: block; }
+}
+
+/*-- 8. Blog-reading --*/
 
 #dpsp-content-top { 
     margin-right: 1.5rem;
@@ -914,10 +934,19 @@ input:-webkit-autofill:focus {
     line-height: 2;
 }
 
+.news p span { color: #1aa3ff; }
+
 .news-read h1 {
     margin-bottom: 0;
     /* color: #1aa3ff; */
     color: #333333;
+}
+
+.news-read figure {
+    width: 60%;
+    margin-right: 1.5rem;
+    border: 1px solid #eeeeee;
+    float: left;
 }
 
 .news-read h2 { font-size: 2rem; }
