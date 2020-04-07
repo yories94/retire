@@ -75,7 +75,7 @@ add_filter( 'pre_get_posts', 'filter_search' );
 
 // Changing excerpt length
 function new_excerpt_length( $length ) {
-	return 100;
+	return 20;
 }
 add_filter( 'excerpt_length', 'new_excerpt_length' );
 
@@ -84,8 +84,9 @@ function new_excerpt_more( $more ) {
 	
 	// return '...';
 
-	return '&hellip; <a href="' . get_the_permalink() . '" 
-			class="btn btn-primary btn-lg btn-center">Read More</a>';
+	// return '&hellip; <a href="' . get_the_permalink() . '" 
+	// 		class="btn btn-primary btn-lg btn-center">Read More</a>';
+	return '... <span>Read More</span>';
 
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
