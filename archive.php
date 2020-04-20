@@ -62,27 +62,31 @@ get_header();
                         the_post();
                     ?>
 
-                        <div class="news">
-                            <h2><?php the_title( ); ?></h2>
-                            <div class="news-meta">
-                                <span><i class="icofont-business-man"></i> <?php the_author( ); ?></span> | <span><i class="icofont-calendar"></i> <?php the_date( 'j F Y' ); ?></span>
+                        <a href="<?php the_permalink( ); ?>" class="news">
+                            <div class="section-1">
+                            
+                            <?php
+                            if ( has_post_thumbnail( ) ) {
+                            ?>
+                                <figure>
+                                    <?php the_post_thumbnail( ); ?>
+                                </figure>
+                            <?php
+                            }
+                            ?>
+                            
                             </div>
+                            <div class="section-2">
+                                <h2><?php the_title( ); ?></h2>
+                                <div class="news-meta">
+                                    <span><i class="icofont-business-man"></i> <?php the_author( ); ?></span> | <span><i class="icofont-calendar"></i> <?php the_date( 'j F Y' ); ?></span>
+                                </div>
 
-                        <?php
-                        if ( has_post_thumbnail( ) ) {
-                        ?>
-                            <figure class="news-thumbnail">
-                                <?php the_post_thumbnail( ); ?>
-                            </figure>
-                        <?php
-                        }
-                        ?>
-
-                        <?php
-                        the_excerpt( );
-                        ?>
-
-                        </div>
+                            <?php
+                            the_excerpt( );
+                            ?>
+                            </div>
+                        </a>
 
                     <?php
                     endwhile;
