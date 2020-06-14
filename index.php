@@ -70,7 +70,7 @@ get_header();
 
                     <?php
                         endwhile;
-                        wp_pagenavi();
+                        page_pagination();
                     else :
                     ?>
                         <p class="post-not-found">
