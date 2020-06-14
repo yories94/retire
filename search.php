@@ -76,7 +76,7 @@ get_header();
 
                     <?php
                         endwhile;
-                        wp_pagenavi();
+                        page_pagination();
                     ?>
 
                     </div>
