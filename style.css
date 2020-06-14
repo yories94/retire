@@ -1004,10 +1004,10 @@ input:-webkit-autofill:focus {
     color: #6f6f6f;
 }
 
-.pagination {
+/* .pagination {
     padding: 30px 0;
     text-align: center;
-}
+} */
 
 .widgt-padding {
     padding-bottom: 20px;
@@ -1106,13 +1106,63 @@ input:-webkit-autofill:focus {
     font-size: 18px;
 }
 
-/*-- 8. 404 Page --*/
+/*-- 8. Pagination-function-style --*/
+
+ul.page-numbers {
+    display: block;
+    margin: 0;
+    padding: 0 0 90px 0;
+    list-style: none;
+    text-align: center;
+}
+
+.page-numbers::after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+ul.page-numbers li {
+    display: inline-block;
+    margin: 0 4px 4px 0;
+}
+
+.page-numbers a,
+.page-numbers span {
+    display: block;
+    padding: 10px 16px;
+    line-height: 18px;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fefefe;
+    background-color: #1aa3ff;
+}
+
+.page-numbers a span { padding: 0 }
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover {
+    color: #fefefe;
+    background: #0069d9;
+    text-decoration: none;
+}
+
+.page-numbers:hover { text-decoration: none }
+
+/*-- 9. 404 Page --*/
 
 .content-404 {
     padding: 150px 0;
 }
 
-/*-- 9. Footer-Area --*/
+/*-- 10. Footer-Area --*/
 
 .footer-area {
     background-color: #2f2f2f;
