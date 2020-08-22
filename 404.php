@@ -15,8 +15,8 @@ get_header();
         <section>
             <div class="container">
                 <div class="content-404">
-                    <h1>Page/Post Not Found</h1>
-                    <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'retire' ); ?></p>
+                    <h1>Halaman/Halaman Post Tidak Ketemu</h1>
+                    <p><?php _e( 'Sepertinya konten tidak ada disini. Gunakan filter pencarian dibawah ini untuk cari artikel.', 'retire' ); ?></p>
 					<?php get_search_form(); ?>
                 </div>
             </div>

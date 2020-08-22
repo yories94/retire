@@ -1,4 +1,4 @@
-<div class="offset-md-1 col-md-3">
+<div class="col-md-4">
 
 <?php
 // Display sidebar with widgets

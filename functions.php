@@ -26,6 +26,8 @@ if ( ! function_exists( 'happylife_theme_setup' ) ) {
 
 		// Enable support for Post Thumbnails on posts and pages.
 		add_theme_support( 'post-thumbnails' );
+		// Enable support fgor title tag generator
+		add_theme_support( 'title-tag' );
 
 	}
 
@@ -75,43 +77,29 @@ add_filter( 'pre_get_posts', 'filter_search' );
 
 // Changing excerpt length
 function new_excerpt_length( $length ) {
-	return 20;
+	return 17;
 }
 add_filter( 'excerpt_length', 'new_excerpt_length' );
 
 // Changing excerpt more
 function new_excerpt_more( $more ) {
-	
-	// return '...';
-
-	// return '&hellip; <a href="' . get_the_permalink() . '" 
-	// 		class="btn btn-primary btn-lg btn-center">Read More</a>';
 	return '... <span>Read More</span>';
-
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
-// Adding dynamic meta description function
-function add_dynamic_meta_desc() {
-
-	global $post;
-
-	// Return the excerpt() if it exists other truncate
-	if ( ! empty( $post->post_excerpt ) ) {
-		$content = $post->post_excerpt;
-	} else if ( ! empty( $post->post_content ) ) {
-		$content = wp_trim_words( $post->post_content, 40, '...' );
-	} else {
-		return;
+// Change search page slug name
+if ( !function_exists( 'change_search_slug_name' ) )
+{
+	function change_search_slug_name()
+	{
+		if ( is_search() && !empty( $_GET['s'] ) )
+		{
+			wp_redirect( home_url( "/search/" ) . urlencode( get_query_var( 's' ) ) );
+			exit();
+		}
 	}
-
-	?>
-	<meta name="description" content="<?php echo esc_attr( strip_tags( stripslashes( $content ) ) ); ?>" />
-	<?php
+	add_action( 'template_redirect', 'change_search_slug_name' );
 }
-
-// Add post type support
-add_post_type_support( 'page', 'excerpt' );
 
 // Pagination setting
 // Numbered Pagination
