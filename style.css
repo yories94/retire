@@ -38,7 +38,7 @@ body {
 
 body {
     /* font-family: 'Montserrat 400', sans-serif; */
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 1.8em;
@@ -74,7 +74,7 @@ h5,
 h6 {
     color: #3f3f3f;
     /* font-family: 'Montserrat 600', sans-serif; */
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0 0 15px;
     font-weight: 600;
     line-height: 1.4em;
@@ -207,7 +207,7 @@ input:-webkit-autofill:focus {
 /*-- 5. Mainmenu-Area --*/
 
 .navbar {
-    padding: 1.2rem 1rem;
+    padding: 0.665rem 1rem;
 }
 
 .navbar-brand {
@@ -237,6 +237,7 @@ input:-webkit-autofill:focus {
     padding: 5px 8px;
     color: white;
     text-align: center;
+    font-size: 15px;
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s;
 }
@@ -760,12 +761,12 @@ input:-webkit-autofill:focus {
     End of homepage-stylesheet
 */
 
-/*-- 6. Jumbotron-Blog-Area --*/
+/*-- 6. Blog-Area --*/
 
 .jumbotron {
-    padding-top: 8rem;
+    padding-top: 6.5rem;
     margin-bottom: 0;
-    padding-bottom: 4rem;
+    padding-bottom: 2.7rem;
     border-radius: 0;
 }
 
@@ -776,9 +777,7 @@ input:-webkit-autofill:focus {
     background-size: 100% 113%;
 }
 
-.small-container {
-    max-width: 650px;
-}
+.small-container { max-width: 650px; }
 
 .align-center h1,
 .align-center p{
@@ -787,47 +786,20 @@ input:-webkit-autofill:focus {
 
 .font-white h1, 
 .align-center p {
-    /* color: #fefefe; */
     color: #333333;
 }
 
 .font-white h1 {
-    margin: 3px; 
+    margin: 0; 
     font-size: 45px; 
 }
 
-.font-white p {
-    margin-bottom: 40px;
-}
+.font-white p { margin-bottom: 26px; }
 
 .input-group-append .btn {
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
-
-@media only screen and (max-width: 1200px) {}
-
-@media only screen and (max-width: 991px) {
-    .bg-happy {
-        background-size: 1000px 450px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .bg-happy {
-        background-size: 900px 450px;
-        background-position-x: -120px;
-    }
-}
-
-@media only screen and (min-width: 576px) {
-    .jumbotron { 
-        padding-top: 9rem;
-        padding-bottom: 4.5rem;
-    }
-}
-
-/*-- 7. Blog Area --*/
 
 .grey-container {
     background-color: #f2f2f2;
@@ -839,14 +811,12 @@ input:-webkit-autofill:focus {
     color: #666666;
 }
 
-.blog-container {
-    padding-top: 50px;
-}
+.blog-container { padding-top: 30px; }
 
 .archive-desc {
-    padding: 20px 10px;
-    margin-bottom: 50px;
-    font-size: 22px;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    font-size: 16px;
     border-bottom: 1px solid #d0d0d0;
     color: #6f6f6f;
 }
@@ -859,27 +829,27 @@ input:-webkit-autofill:focus {
 .news {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
-    padding-bottom: 80px;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid #d6d6d6;
     transition: color 0.13s;
 }
 
 .news:hover { color: inherit; }
 
-.section-1 { flex-basis: 45%; }
-.section-2 { flex-basis: 50%; }
+.section-1 { flex-basis: 30%; }
+.section-2 { flex-basis: 65%; }
 
 .news h1 {
     margin-bottom: 0;
-    /* color: #1aa3ff; */
     color: #333333;
 }
 
 .news h2 {
-    /* color: #1aa3ff; */
+    margin-bottom: 3px;
     color: #333333;
-    font-size: 2.5rem;
+    font-size: 26px;
+    font-weight: bolder;
     transition: color 0.21s;
 }
 
@@ -891,12 +861,62 @@ input:-webkit-autofill:focus {
     border: 1px solid #eeeeee;
 }
 
+.news p { 
+    font-size: 15px;
+    margin: 0; 
+}
+.news p span { color: #1aa3ff; }
+
+.news-meta { margin-bottom: 10px; }
+
+.news-meta span {
+    font-size: 15px;
+    color: #333333;
+}
+
+.news-meta span:nth-child(1) { display: inline-block; }
+
 @media only screen and (max-width: 1200px) {
     .news h2 { font-size: 2rem; }
 }
 
 @media only screen and (max-width: 991px) {
-    .news, .section-1, .section-2 { display: block; }
+    .bg-happy { background-size: 1000px 450px; }
+    .section-1 { flex-basis: 30%; }
+    .section-2 { flex-basis: 67%; }
+}
+
+@media only screen and (max-width: 767px) {
+    .jumbotron { 
+        padding-top: 4.8rem;
+        padding-bottom: 3rem;
+    }
+    .bg-happy {
+        background-size: 900px 450px;
+        background-position-x: -120px;
+    }
+    .font-white h1 {
+        margin: 0; 
+        font-size: 36px; 
+    }
+    .blog-container { padding-top: 1.43rem; }
+    .news h2 {
+        margin-bottom: 0; 
+        font-size: 23px; 
+    }
+    .news-meta { margin-bottom: 0; }
+    .news-meta span {
+        margin-bottom: 0; 
+        font-size: 13px; 
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .jumbotron { 
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+    .font-white h1 { font-size: 28px; }
 }
 
 /*-- 8. Blog-reading --*/
@@ -912,33 +932,20 @@ input:-webkit-autofill:focus {
     clear: both;
 }
 
-.news-read {
-    padding-bottom: 80px;
-}
+.news-read { padding-bottom: 80px; }
+.news-meta-read { margin-bottom: 42px; }
 
-.news-meta {
-    margin-bottom: 23px;
-}
-
-.news-meta span {
+.news-meta-read span {
     font-size: 15px;
     color: #333333;
 }
 
-.news-meta span:nth-child(1) {
-    display: inline-block; 
-}
-
-.news p, .news-read p {
-    font-size: 18px;
-    line-height: 2;
-}
-
-.news p span { color: #1aa3ff; }
+.news-meta-read span:nth-child(1) { display: inline-block; }
 
 .news-read h1 {
-    margin-bottom: 0;
-    /* color: #1aa3ff; */
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
     color: #333333;
 }
 
@@ -949,14 +956,20 @@ input:-webkit-autofill:focus {
     float: left;
 }
 
-.news-read h2 { font-size: 2rem; }
+.news-read p {
+    font-size: 17px;
+    line-height: 2;
+}
 
+.news-read h2 { font-size: 2rem; }
 .news-read h3 { font-size: 1.5rem; }
 
-.excerpt-section {
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: #999999;
+.news-read p a,
+.news-read ul li a { color: #1aa3ff; }
+.news-read p a:hover,
+.news-read ul li a:hover {
+    color: #006bb3;
+    transition: color 0.12s;
 }
 
 .news-read article p img {
@@ -1004,53 +1017,33 @@ input:-webkit-autofill:focus {
     color: #6f6f6f;
 }
 
-/* .pagination {
-    padding: 30px 0;
-    text-align: center;
-} */
-
-.widgt-padding {
-    padding-bottom: 20px;
-}
-
-.widgt {
-    font-size: 20px;
-    font-weight: bold;
-}
+.widgt-padding { padding-bottom: 56px; }
 
 .widgt h3 {
     position: relative;
-    padding-bottom: 17px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     color: #1aa3ff;
-    font-size: 27px;
-}
-
-.widgt h3::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 90px;
-    height: 0;
-    border-bottom: 3px solid #333333;
+    font-size: 24px;
+    border-bottom: 2px solid #333333;
 }
 
 .widgt ul {
     margin: 0;
-    padding: 10px 0 0 0;
+    padding: 0;
     list-style: none;
 }
 
 .widgt ul li {
     position: relative;
-    padding: 10px 0;
+    padding: 7px 0 7px 21px;
     border-bottom: 1px solid #d9d9d9;
 }
 
 .widgt ul li::before {
     content: '';
     position: absolute;
-    left: -21px;
+    left: 0;
     top: 20px;
     border-radius: 50%;
     border: 5px solid #1aa3ff;
@@ -1058,7 +1051,7 @@ input:-webkit-autofill:focus {
 
 .widgt ul li a {
     display: block;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: lighter;
 }
 
@@ -1066,7 +1059,7 @@ input:-webkit-autofill:focus {
     position: relative;
     display: inline-block; 
     margin-bottom: 9px;
-    padding: 6px 13px;
+    padding: 6px 10px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
 }
@@ -1111,7 +1104,7 @@ input:-webkit-autofill:focus {
 ul.page-numbers {
     display: block;
     margin: 0;
-    padding: 0 0 90px 0;
+    padding: 40px 0 90px 0;
     list-style: none;
     text-align: center;
 }
@@ -1164,9 +1157,7 @@ ul.page-numbers li {
 
 /*-- 10. Footer-Area --*/
 
-.footer-area {
-    background-color: #2f2f2f;
-}
+.footer-area { background-color: #2f2f2f; }
 
 .footer-single ul {
     margin: 0;
