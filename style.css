@@ -650,7 +650,7 @@ input:-webkit-autofill:focus {
     text-align: center;
 }
 
-.box {
+/* .box {
     display: flex;
     margin-bottom: 20px;
 }
@@ -674,69 +674,59 @@ input:-webkit-autofill:focus {
     text-decoration: none;
     color: #444444;
     background-color: #d7f4de;
+} */
+
+.box-carousel {
+    flex-basis: 100%;
+    display: flex;
+    padding: 20px 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    /* word-break: break-all; */
+    background-image: url('images/asset_categories.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fefefe;
+    border-radius: 3px;
+    transition: color 0.22s, background-color 0.21s;
+}
+
+.box-carousel:hover {
+    text-decoration: none;
+    color: #444444;
 }
 
 .owl-carousel {
-    display: none !important;
+    display: block !important;
 }
 
-@media only screen and (max-width: 1200px) {
-    /* .category-menu {
-        width: 80%;
-    } */
+.owl-wrapper {
+    display: flex !important;
 }
 
-@media only screen and (max-width: 991px) {
-    .category-boxes {
-        display: none;
-    }
-    
-    .owl-carousel {
-        display: block !important;
-    }
-
-    .owl-wrapper {
-        display: flex !important;
-    }
-
-    .owl-item {
-        display: flex;
-        justify-content: stretch;
-        padding: 0 8px;
-        border-radius: 4px;
-    }
-
-    .item-category {
-        flex-basis: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        padding: 0;
-    }
-
-    .box-carousel {
-        flex-basis: 100%;
-        display: flex;
-        padding: 20px 10px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        word-break: break-all;
-        background-image: url('images/asset_categories.png');
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        color: #fefefe;
-        border-radius: 3px;
-        transition: color 0.22s, background-color 0.21s;
-    }
-
-    .box-carousel:hover {
-        text-decoration: none;
-        color: #444444;
-    }
+.owl-item {
+    display: flex;
+    justify-content: stretch;
+    padding: 0 8px;
+    border-radius: 4px;
 }
 
-@media only screen and (max-width: 767px) {}
+.item-category {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 576px) {
+    .categories-section h2 {
+        margin: 0;
+        padding-bottom: 24px;
+    }
+}
 
 /* Company-address-contact */
 

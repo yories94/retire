@@ -9,7 +9,7 @@
 
     // Activate carousel for display categories carousel
     $(".slider").owlCarousel({
-        items: 3,
+        items: 5,
         autoPlay: 4000,
         responsive: true,
         itemsMobile: [479, 2],

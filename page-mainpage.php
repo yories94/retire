@@ -69,9 +69,8 @@ get_header();
                 $categories = get_categories( );
                 ?>
 
-                    <h2>Categories</h2>
-
-                    <div class="row category-boxes">
+                    <h2>Kategori</h2>
+                    <!-- <div class="row category-boxes">
 
                     <?php
                     $delay = 150;
@@ -89,9 +88,9 @@ get_header();
                     endforeach;
                     ?>
 
-                    </div>
+                    </div> -->
 
-                    <div class="slider categories-carousel" data-aos="fade-down">
+                    <div class="slider" data-aos="fade-down">
 
                     <?php
                     foreach ( $categories as $kategori ):
